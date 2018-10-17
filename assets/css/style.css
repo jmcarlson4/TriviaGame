@@ -13,10 +13,6 @@ h2 {
     text-align: center;
 }
 
-.btn btn-secondary btn-lg {
-    text-align: center;
-}
-
 #display {
     text-align: center;
     font-family: cursive;
@@ -26,4 +22,11 @@ h2 {
 #Button {
     text-align: center;
     font-family: cursive;
+    font-size: -webkit-xxx-large;
+}
+
+#box {
+    text-align: center;
+    font-family: cursive;
+    font-size: 200%;
 }
