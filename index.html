@@ -14,42 +14,40 @@
 
     <h1>Trivia Time!!</h1>
     <h2>You have 1 minute to answer the following questions. Good Luck!</h2>
+    <div id="countdown">60</div>
 
-    <form id="quiz" name="quiz"></form>
-    <div id="show-number"></div>
-  
-    <div id="Button">
-    <button id="Start">Start</button>
-   </div>
+    <form name="Quiz">
 
-  <!-- <div id="box">
-<p>Whch band does Richard Sterban play in?</p>
-<input type="radio" id="mc" name="question1" value="Alabama">Alabama<br>
-<input type="radio" id="mc" name="question1"  value="Eagles">Eagles<br>
-<input type="radio"  id="mc" name="question1"  value="Beach Boys">Beach Boys<br>
-<input type="radio" name="question1" id="mc" value="Oak Ridge Boys">Oak Ridge Boys<br>
 
-<p>Which female singer made the most duets with Conway Twitty?</p>
-<input type="radio" id="mc" name="question2" value="Tammy Wynette">Tammy Wynette<br>
-<input type="radio" id="mc" name="question2"  value="Janie Fricke">Janie Fricke<br>
-<input type="radio" id="mc" name="question2" value="Loretta Lynn">Loretta Lynn<br>
-<input type="radio" id="mc" name="question2"  value="Crystal Gayle">Crystal Gayle<br>
 
-<p>Which band plays the song "Gimme One More Chance?</p>
-<input type="radio" id="mc" name="question3" value="Diamond Rio">Diamond Rio<br>
-<input type="radio" id="mc" name="question3"  value="Exile">Exile<br>
-<input type="radio" id="mc" name="question3"  value="Statler Brothers">Statler Brothers<br>
-<input type="radio" id="mc"  name="question3"  value="BlackHawk">BlackHawk<br>
+        <div id="box">
+            <p>Whch band does Richard Sterban play in?</p>
+            <input type="radio" id="mc" name="question1" value="a">Alabama<br>
+            <input type="radio" id="mc" name="question1" value="b">Eagles<br>
+            <input type="radio" id="mc" name="question1" value="c">Beach Boys<br>
+            <input type="radio" name="question1" id="mc" value="d">Oak Ridge Boys<br>
 
-<p>Which singer is known as the Man in Black?</p>
-<input type="radio" id="mc" name="question4" value="Johnny Cash">Johnny Cash<br>
-<input type="radio" id="mc"  name="question4"  value="George Jones">George Jones<br>
-<input type="radio" id="mc"  name="question4"  value="Tom T Hall">Tom T Hall<br>
-<input type="radio" id="mc" name="question4"  value="George Straight">George Straight<br>
-</div> -->
+            <p>Which female singer made the most duets with Conway Twitty?</p>
+            <input type="radio" id="mc" name="question2" value="a">Tammy Wynette<br>
+            <input type="radio" id="mc" name="question2" value="b">Janie Fricke<br>
+            <input type="radio" id="mc" name="question2" value="c">Loretta Lynn<br>
+            <input type="radio" id="mc" name="question2" value="d">Crystal Gayle<br>
 
-<button id="submit">submit</button>
-<div id="results"></div>
+            <p>Which band plays the song "Gimme One More Chance?</p>
+            <input type="radio" id="mc" name="question3" value="a">Diamond Rio<br>
+            <input type="radio" id="mc" name="question3" value="b">Exile<br>
+            <input type="radio" id="mc" name="question3" value="c">Statler Brothers<br>
+            <input type="radio" id="mc" name="question3" value="d">BlackHawk<br>
+
+            <p>Which singer is known as the Man in Black?</p>
+            <input type="radio" id="mc" name="question4" value="a">Johnny Cash<br>
+            <input type="radio" id="mc" name="question4" value="b">George Jones<br>
+            <input type="radio" id="mc" name="question4" value="c">Tom T Hall<br>
+            <input type="radio" id="mc" name="question4" value="d">George Straight<br>
+        </div>
+        <input type="button" id="submit" value="submit" onclick="check()">
+    </form>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
