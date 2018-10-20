@@ -1,101 +1,40 @@
-var number = 60;
-var intervalId;
-var correct = 0;
-var incorrect = 0;
 
 
-$("#Start").on("click", run);
+var seconds;
+var temp;
 
-function run() {
-    clearInterval(intervalId);
-    intervalId = setInterval(decrement, 1000);
-}
-function decrement() {
-    number--;
-    $("#show-number").html("<h2>" + number + "</h2>");
-    if (number === 0) {
-        stop();
-        alert("Times Up!!");
+function countdown() {
+    seconds = document.getElementById("countdown").innerHTML;
+    seconds = parseInt(seconds, 10);
+    if (seconds == 1) {
+        temp = document.getElementById("countdown");
+        temp.innerHTML = "Times Up";
+        return;
     }
-
+    seconds--;
+    temp = document.getElementById("countdown");
+    temp.innerHTML = seconds;
+    timeout = setTimeout(countdown, 1000);
 }
+countdown();
 
-function stop() {
-    clearInterval(intervalId);
-};
-
-const doneButton = document.getElementById(results);
-
-const submitButton = document.getElementById(submit);
-
-const quizContainer = document.getElementById(box);
-
-const myQuestions = [
-{
-    question : "Which band does Richard Sterban play in?",
-    answers :{
-        a: "Alabama",
-        b: "Eagles",
-        c: "Beach Boys",
-        d: "Oak Ridge Boys"
-    },
-    correctAnswer: "d"
-},
-{
-    question : "Which female singer made the most duets with Conway Twitty?",
-    answers : {
-        a: "Tammy Wynette",
-        b: "Janie Fricke",
-        c: "Loretta Lynn",
-        d: "Crystal Gayle"
-    },
-    correctAnswer : "c"
-},
-{
-    question : "Which band plays the song Gimme One More Chance?",
-    answers : {
-        a: "Diamond Rio",
-        b: "Exile",
-        c: "Statler Brothers",
-        d: "BlackHawk"
-    },
-    correctAnswer : "b"
-},
-{
-    question : "Which singer is known as the Man in Black?",
-    answers : {
-        a: "Johnny Cash",
-        b: "George Jones",
-        c: "Tom T Hall",
-        d: "George Straight"
-    },
-    correctAnswer : "a"
+function check() {
+    var question1 = document.Quiz.question1.value;
+    var question2 = document.Quiz.question2.value;
+    var question3 = document.Quiz.question3.value;
+    var question4 = document.Quiz.question4.value;
+    var count = 0;
+    if (question1 == "d") {
+        count++;
+    }
+    if (question2 == "c") {
+        count++;
+    }
+    if (question3 == "b") {
+        count++;
+    }
+    if (question4 == "a") {
+        count++;
+    }
+    alert("You got " + count + " correct");
 }
-];
-
-function buildQuiz (){
-    const output [];
-}
-
-myQuestions.forEach(
-    (currentQuestion, questionNumber => {
-        const answers = [];
-        for(letter in currentQuestion.answers){
-            answers.push(<label>
-                <input type="radio" name="question${questionNumber}"
-                value = "${letter}"></input>
-                
-            </label>)
-        }
-    })
-)
-function showResults (){}
-
-
-
-buildQuiz ();
-
-submitButton.addEventListener("click", showResults);
-
-
-
