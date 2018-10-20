@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://thumbs.dreamstime.com/t/abstract-background-watercolor-wash-marble-pattern-texture-natural-background-interiors-marble-stone-wall-design-abstract-103544681.jpg)
+    background-image: url(http://www.abnewswire.com/pressreleases/wp-content/uploads/2014/11/1416058033.jpeg);
 }
 
 h1 {
@@ -13,20 +13,17 @@ h2 {
     text-align: center;
 }
 
-#display {
-    text-align: center;
-    font-family: cursive;
-    font-size: 400%;
-}
-
-#Button {
-    text-align: center;
-    font-family: cursive;
-    font-size: -webkit-xxx-large;
-}
-
 #box {
     text-align: center;
     font-family: cursive;
     font-size: 200%;
+}
+#countdown{
+    text-align: center;
+    font-size: 400%;
+}
+
+#submit {
+    margin-left: 45%;
+    font-size: 300%;
 }
